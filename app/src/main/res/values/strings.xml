@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android-PatternLockView-master</string>
+    <string name="setting">设置</string>
+    <string name="open">解锁</string>
+</resources>
