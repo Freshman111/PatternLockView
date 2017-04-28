@@ -89,7 +89,7 @@ public class PatternLockView extends View{
         circleStrokeWidth= (int) DisplayUtils.dpToPx(getContext(),2);
         circleRadius= (int) DisplayUtils.dpToPx(getContext(),30);
         areaWidth= (int) DisplayUtils.dpToPx(getContext(),34);
-        lineWidth= (int) DisplayUtils.dpToPx(getContext(),2.4f);
+        lineWidth= (int) DisplayUtils.dpToPx(getContext(),2f);
 
         dotPaint=new Paint();
         dotPaint.setAntiAlias(true);
