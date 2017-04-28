@@ -2,7 +2,7 @@ package com.sgffsg.patternlockview.view;
 
 /**
  * 点类
- * Created by liumengkai on 17/4/24.
+ * Created by sgffsg on 17/4/24.
  */
 
 public class Dot {

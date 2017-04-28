@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 /**
  * 图案手势解锁控件
- * Created by liumengkai on 17/4/24.
+ * Created by sgffsg on 17/4/24.
  */
 
 public class PatternLockView extends View{

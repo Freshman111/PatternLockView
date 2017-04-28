@@ -11,7 +11,7 @@ import com.sgffsg.patternlockview.view.PatternViewLintener;
 
 /**
  * 图案解锁
- * Created by liumengkai on 17/4/24.
+ * Created by sgffsg on 17/4/24.
  */
 
 public class PatternLockActivity extends AppCompatActivity{
