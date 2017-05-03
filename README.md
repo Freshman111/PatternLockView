@@ -6,5 +6,5 @@ Android pattern gesture lock view，图案手势解锁控件
 
 ## App Preview
 
-![](art/device1.png)
-![](art/device2.png)
+<img src="art/device1.jpg" width="360" height="640" alt="jpg"/>
+<img src="art/device2.jpg" width="360" height="640" alt="jpg"/>
