@@ -1,4 +1,4 @@
-package com.sgffsg.patternlockview;
+package com.sgffsg.example;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,8 @@ import android.text.TextUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.sgffsg.patternlockview.view.PatternLockView;
-import com.sgffsg.patternlockview.view.PatternViewLintener;
+import com.sgffsg.patternlockview.PatternLockView;
+import com.sgffsg.patternlockview.PatternViewLintener;
 
 /**
  * 图案解锁

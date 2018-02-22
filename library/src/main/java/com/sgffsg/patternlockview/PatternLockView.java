@@ -1,4 +1,4 @@
-package com.sgffsg.patternlockview.view;
+package com.sgffsg.patternlockview;
 
 import android.content.Context;
 import android.graphics.Canvas;

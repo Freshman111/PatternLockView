@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.sgffsg.patternlockview.view.PatternLockView
+    <com.sgffsg.patternlockview.PatternLockView
         android:id="@+id/patternlockview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

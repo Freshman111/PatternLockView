@@ -1,4 +1,4 @@
-package com.sgffsg.patternlockview;
+package com.sgffsg.example;
 
 import android.content.Context;
 import android.content.SharedPreferences;

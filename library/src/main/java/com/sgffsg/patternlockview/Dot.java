@@ -1,4 +1,4 @@
-package com.sgffsg.patternlockview.view;
+package com.sgffsg.patternlockview;
 
 /**
  * 点类
