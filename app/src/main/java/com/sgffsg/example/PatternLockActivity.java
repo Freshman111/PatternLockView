@@ -7,7 +7,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sgffsg.patternlockview.PatternLockView;
-import com.sgffsg.patternlockview.PatternViewLintener;
+import com.sgffsg.patternlockview.PatternViewListener;
 
 /**
  * 图案解锁
@@ -42,7 +42,7 @@ public class PatternLockActivity extends AppCompatActivity{
             patternLockView.setIsSetting(true);
         }
         tvTip.setText("请输入手势");
-        patternLockView.setPatternViewListener(new PatternViewLintener() {
+        patternLockView.setPatternViewListener(new PatternViewListener() {
             @Override
             public void onSuccess() {
                 Toast.makeText(PatternLockActivity.this,"成功",Toast.LENGTH_SHORT).show();
@@ -50,8 +50,12 @@ public class PatternLockActivity extends AppCompatActivity{
             }
 
             @Override
-            public void onSet(String psw) {
+            public void onDraw(String psw) {
                 if (!TextUtils.isEmpty(psw)){
+                    if (psw.length()<4){
+                        Toast.makeText(PatternLockActivity.this,"最少连接四个点",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     if (TextUtils.isEmpty(password)){
                         password=psw;
                         tvTip.setText("再次输入手势");

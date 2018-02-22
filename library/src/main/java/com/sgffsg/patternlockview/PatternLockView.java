@@ -61,7 +61,7 @@ public class PatternLockView extends View{
     private String input="";
     private ArrayList<Dot> dots;
     private ArrayList<Dot> selectDots=new ArrayList<>();
-    private PatternViewLintener patternLintener;
+    private PatternViewListener patternLintener;
     private boolean isFirstHit=false;//第一次用户点击下的时候是否击中一个点，没有击中就没有后续动作
 
     private boolean mEnableHapticFeedback = true;//震动回馈
@@ -201,13 +201,9 @@ public class PatternLockView extends View{
                 return true;
             case MotionEvent.ACTION_UP:
                 if (isSetting){
-                    if (input!=null&&input.length()>3){//最少四个点
-                        String result=input;
-                        resetPatternView();
-                        patternLintener.onSet(result);
-                    }else {
-                        resetPatternView();
-                    }
+                    String result=input;
+                    resetPatternView();
+                    patternLintener.onDraw(result);
                 }else {
                     if (input!=null&&input.length()>0){
                         if (password.equals(input)){
@@ -263,7 +259,7 @@ public class PatternLockView extends View{
      * 设置图案控件监听器
      * @param listner listner
      */
-    public void setPatternViewListener(PatternViewLintener listner){
+    public void setPatternViewListener(PatternViewListener listner){
         this.patternLintener=listner;
     }
 

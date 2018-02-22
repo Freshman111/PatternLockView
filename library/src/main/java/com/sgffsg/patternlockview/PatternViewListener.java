@@ -5,8 +5,8 @@ package com.sgffsg.patternlockview;
  * Created by sgffsg on 17/4/24.
  */
 
-public interface PatternViewLintener {
+public interface PatternViewListener {
     void onSuccess();
-    void onSet(String psw);
+    void onDraw(String psw);
     void onError();
 }

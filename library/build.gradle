@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 26
@@ -33,37 +34,13 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-ext {
-    // 项目的主页
-    yourSiteUrl = 'https://github.com/Freshman111/PatternLockView'
-    // Git仓库的url
-    yourGitUrl = 'https://github.com/Freshman111/PatternLockView'
-    // issue 地址
-    YourIssueTrackerUrl = 'https://github.com/Freshman111/PatternLockView/issues'
-
-    // 项目的名称，将会显示在bintray
-    yourProName = 'PatternLockView'
-    // 项目的描述
-    yourProDesc = 'Android pattern gesture lock view'
-
-    // bintrayID
-    yourId = 'sgffsg'
-    // nickName
-    yourName = 'liumengkai'
-    // email
-    yourEmail = 'sgffsg@126.com'
-
-    // 最后生成依赖 compile 'yourGroup:yourArtifactId:yourVersion'
-    // 最后生成依赖 compile 'com.march.lightadapter:lightadapter:1.0.1-beta1'
-    yourGroup = 'com.sgffsg.patternlockview'
-    yourArtifactId = 'patternlockview'
-    yourVersion = '0.8.1'
-
-
-    // 此文件中存储的是 bintray 的敏感信息，用户名和key
-    // 你需要在该文件中如下声明
-    // bintray.user=xxxx
-    // bintray.apikey=xxxx
-    // 你可以使用项目中的 local.properties
-    yourBintrayUserPath = '/Users/liumengkai/AndroidStudioProjects/Android-PatternLockView-master/local.properties'
+//添加
+publish {
+    userOrg = 'sgffsg1'//bintray.com用户名
+    groupId = 'com.sgffsg'//jcenter上的路径
+    artifactId = 'PatternLockView'//项目名称
+    publishVersion = '0.8.1'//版本号
+    desc = 'Android pattern gesture lock view'
+    website = 'https://github.com/Freshman111/PatternLockView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
+
