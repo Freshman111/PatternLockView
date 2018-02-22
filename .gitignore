@@ -7,7 +7,6 @@
 build/
 .gradle/
 */build/
-/local.properties
 
 # IDEA
 *.iml
@@ -42,18 +41,11 @@ antLauncher/gen
 
 
 # Local configuration file (sdk path, etc)
-local.properties
+/local.properties
 
 
 # Log Files
 *.log
-
-
-
-# generated files
-bin/
-gen/
-
 
 # Eclipse project files
 .classpath
