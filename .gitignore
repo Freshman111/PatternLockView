@@ -7,7 +7,7 @@
 build/
 .gradle/
 */build/
-
+/local.properties
 
 # IDEA
 *.iml
@@ -83,3 +83,7 @@ settings.gradle
 !/local.properties
 !/settings.gradle
 !/gradlew
+app/libs/
+app/src/main/res/drawable/
+library/libs/
+library/src/main/res/drawable/
